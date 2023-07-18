@@ -10,13 +10,35 @@
 <h1>Operadores</h1>
     <!--script php-->
     <?php 
-    /*1.Los operadores son símbolos que se utilizan en la elaboración 
-    de una ecuación de búsqueda y que permiten combinar diferentes términos entre sí y establecer relaciones lógicas entre los términos*/ 
+    operadores aritmeticos
+    /*1.Sirven para hacer cálculos matemáticos con valores numéricos*/ 
+    $sumar = 1 + 1
+$restar = 20 - 5
+$multiplicar = 15 * 2
+$dividir = 30 / 30
+$potencia = 2 ^ 2
 
-    /*2.operadores es que son elementos que relacionan de forma diferente, los valores de una o más variables y/o constantes*/ 
+    Operadores de concatenación:
+    /*2.Sirven para combinar varias cadenas dentro de una sola*/  
+    $y_1_1 = verdadero y verdadero  # -> verdadero
+$y_1_0 = verdadero y falso  # -> falso
+$y_0_1 = falso y verdadero  # -> falso
+$y_0_0 = falso y falso  # -> falso
 
-    /*3.Los operadores son elementos que relacionan de forma diferente, los valores con los que
- trabajamos en los lenguajes de programación. En los lenguajes de programación usamos los operadores para manipular los valores y transformarlos, con el objetivo de realizar 
- los objetivos de los programas*/
+$o_1_1 = verdadero o verdadero # -> verdadero
+$o_1_0 = verdadero o falso  # -> verdadero
+$o_0_1 = falso o verdadero  # -> verdadero
+$o_0_0 = falso o falso  # -> falso
+
+$no_1 = no verdadero  # -> falso
+$no_0 = no falso  # -> verdadero
+
+    Operadores de comparación:
+    /*3.Sirven para comparar dos expresiones y devolver un valor Boolean que representa
+     el resultado de la comparación. Ejemplo: Aquí, 10 se compara con 3 usando el operador
+      «más grande que». El resultado de esta operación, es decir, el valor lógico verdadero,
+       se guarda en la variable $respuesta*/
+     $respuesta = 10 > 3
+
 </body>
 </html>
