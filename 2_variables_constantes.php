@@ -39,12 +39,12 @@
         echo($a);
         echo "<br>";
         echo($b);
-        cho "</b></h1>";
+        echo "</b></h1>";
 
         //Constantes
         //La forma de definir define( string $name , mixed $value [, bool
         //Sintaxis: define("nombre_variable, "valor_variable")])
-        define("capital_colombia","Bgit Bogota")
+        define("capital_colombia","Bgit Bogota");
         define("habitantes", 7000000);
 
     ?>
