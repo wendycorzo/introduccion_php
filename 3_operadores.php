@@ -4,31 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>operadores</title>
+    <title>Operadores</title>
 </head>
 <body>
-<h1>Operadores</h1>
-    <!--script php-->
-    <?php 
-    operadores aritmeticos
-    /*1.Sirven para hacer cálculos matemáticos con valores numéricos*/ 
+    <h1>Operadores</h1>
     <?php
+    //Operadores aritmeticos
+    // Suma: +
+    // Resta: -
+    // Multiplicacion: *
+    // Division: /
+    // Modulo: %
+    // Incremento: ++
+    // Decremento: --
+    // Exponencial: **
+    echo "<h1>Operadores Aritmeticos</h1><br>";
+    $x = 9;
+    echo ("x = ".$x. "<br>");
+    $y = 3;
+    echo ("y = ".$y. "<br>");
+    $z= 5;
+    echo ("z = ".$z. "<br>");
+    $suma = $x + $y;
+    echo ("suma = ".$suma. "<br>");
+    $resta = $x - $z;
+    echo ("resta = ".$resta. "<br>");
+    $multiplicacion = $suma*$resta;
+    echo ("multiplicacion  = ".$multiplicacion. "<br>");
+    $final = $multiplicacion++;
+    echo ("final = ".$final. "<br>");
+    echo ("multiplicacion = ".$multipliccion. "<br>");
 
-echo (5 % 3)."\n";           // muestra 2
-echo (5 % -3)."\n";          // muestra 2
-echo (-5 % 3)."\n";          // muestra -2
-echo (-5 % -3)."\n";         // muestra -2
+    echo $multiplicacion;
+    //Operadores de comparacion
+    //igual: ==
+    //identico: ===
+    //diferente; !=
+    //menor; <
+    //mayor: >
+    //menor o igual: <=
+    //mayor o igual: >=
+    echo "<h1>Operadores de comparacion</h1><br>";
+    $x = 5;
+    $y = 5;
+    echo($x == $y);
+    echo($x <= $y);
+    //Operadores logicos 
+    // AND o &&: $a && $b es True si $a y $b son verdaderos
+    // OR o ||: $a || $b es True si $a o $b son veraderos 
+    // XOR: $a XOR $b es True si $a es verdadero o $b es verdadero, pero no los dos
+    // !: !$a es True si $a es False
+    echo "<h1>Operadores logicos</h1><br>";
+    $x = 4;
+    $y = 5;
 
-?>
+    if(($x==4) && ($y==5))
+    {
+        print("Estas en lo correcto");
+    }
+    echo "<br>";
+    if (($x==4) OR ($y==3))
+    {
+        print("la segunda operacion tambien es correcta");
+    }
+    //Operadores de union (concatenacion) de cadenas
+    // Para la umion de cadenas se emplea el punto (.)
+    echo "<h1>Operadores de union de cadenas </h1><br>";
+    $t = "Ejemplo";
+    $w = "union";
+    $x = "de";
+    $y = "cadenas";
+    $z = "";
+    $resultante1 = $t;
+    $resultante2 = $t.$z.$x.$z.$w.$z.$x.$z.$y;
+    echo "<b></b>";
+    echo $resultado1;
+    echo "<hr>";
+    echo $resultado2;
+    echo "</b<>/h1>";
 
-    Operadores de concatenación:
-    /*2.Sirven para combinar varias cadenas dentro de una sola*/  
-    <?php
-    $a = "Hello ";
-    $b = $a . "World!"; // ahora $b contiene "Hello World!"
-    
-    $a = "Hello ";
-    $a .= "World!";     // ahora $a contiene "Hello World!"
-    ?>
+    ?> 
 </body>
 </html>
+
