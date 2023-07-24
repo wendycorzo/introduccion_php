@@ -7,19 +7,10 @@
     <title>Funciones</title>
 </head>
 <body>
-    <h1>Funciones</h1>
-<?php
-
-//Funciones variables
-//Esto significa que si un nombre de variable tiene paréntesis anexos a él, 
-//PHP buscará una función con el mismo nombre que lo evaluado por la variable,
-// e intentará ejecutarla. Las funciones variables no funcionarán con constructores de lenguaje
-// como echo, print, unset(),isset(), empty(), include, require y similares. 
-echo "<h1>if</h1>";
-//Ejemplo 1
-<?php
-function foo() 
-{
+    <h1>función variable</h1>
+    
+    <?php
+function foo() {
     echo "En foo()<br />\n";
 }
 
@@ -42,6 +33,5 @@ $func('prueba');  // Esto llama a bar()
 
 $func = 'hacerecho';
 $func('prueba');  // Esto llama a hacerecho()
-
-
 ?>
+
